@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>The Number Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleQuiz.css" type="text/css" rel="stylesheet" />
+        <script>
+            function conf(txt){
+                var r = confirm(txt);
+                if (r) {
+                    window.location.href = 'ResetServlet';
+                } 
+            }       
+        </script>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="quiz">
+                <form method='get' action="NumberQuiz">
+                    <h1 id="tittle1">Have fun with NumberQuiz&excl;</h1>
+                    <p>Please type your Age: <input type="text" name="ansAge"/></>
+                    <p>Your current score is: 0</p>
+                    <p>Attempt 0 &sol; 3</p>
+                    <p>Guess the next number in the sequence&excl;</p>
+                    <p>&lbrack; 3, 1, 4, 1, 5 <span id='sred'> &quest;</span> &rbrack; </p>
+                    <p>Your answer: <input type="text" name="ans"/> </p>
+                    <p><input type='submit' name='btnNext' value='Next'/>
+                       <input type='button'  name='btnRestart' value='Restart' onclick="return conf('Do you want to start over?')"/></p>
+                    <p><input type='button' name='btnHint' value='Hint' onclick="return confirm('PI')"/></p>
+                </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 11, 2017, 12:04:27 PM
+    Author     : amcfire
+*/
+
+body{
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+#dh{
+    color: red;
+}
+
+#animationarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.fs1{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    border-color: black;
+    border-width: 5px;
+/*    text-align: center;*/
+}
+
+.title1{
+/*    text-align: left;*/
+    font-size: 12pt;
+}
+
+div.footer {
+	float: right;
+}
+
+#dcontrol {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+/*    text-align: center;*/
+}
+
+.sel1 {
+    width: 110px;
+}

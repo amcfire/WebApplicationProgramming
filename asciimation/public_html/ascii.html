@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Asciimation Viewer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ascii.css" type="text/css" rel="stylesheet" />
+        <script src="animations.js" ></script>
+        <script src="ascii.js" ></script>
+    </head>
+    <body>
+        <div id="dh">&hearts;</div>
+        <h1>CS472&colon; ASCII Animation Viewer</h1>
+        <textarea  id="animationarea" rows="20" cols="80">Your animation here!!!</textarea>
+        <br>
+        <div id="dcontrol">
+            <fieldset class="fs1">
+                <legend><span class=title1>Play Controls&colon;</span></legend>
+                <input type="button" id="bstart" onclick="StartAnimation();" value="Start" /> 
+                <input type="button" id="bstop" disabled onclick="StopAnimation();" value="Stop" />
+            </fieldset>
+            <fieldset class="fs1">
+                <legend><span class=title1>Animation&colon;</span></legend>
+                <select name="favoriteanimation" id="selanimation" class="sel1" onchange="ChangeAnimation()">
+                    <option selected label=" ">Blank</option>
+                    <option>Exercise</option>
+                    <option>Juggler</option>
+                    <option>Bike</option>
+                    <option>Dive</option>
+                    <option>Custom</option>
+                </select>
+            </fieldset>
+            <fieldset class="fs1">
+                <legend><span class=title1>Size&colon;</span></legend>
+                <select name="favoritesize" id="selsize" class="sel1" onchange="ChangeSize()">
+                    <option label="Tiny">7pt</option>
+                    <option label="Small">10pt</option>
+                    <option selected label="Medium">12pt</option>
+                    <option label="Large">16pt</option>
+                    <option label="Extra Large">24pt</option>                
+                    <option label="XXL">32pt</option>                
+                </select>
+            </fieldset>
+            <fieldset class="fs1">
+                <legend><span class=title1>Speed&colon;</span></legend>
+                <label><input type="checkbox" onchange="Speed();" name="Cturbo" id="cturbo" /> Turbo</label>
+            </fieldset>
+        </div>
+        <br>
+        <div class="footer">
+            <a href="http://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/></a><br>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"/></a><br>
+            <a href="https://webster.cs.washington.edu/jslint/?referer"><img src="https://webster.cs.washington.edu/w3c-js.png" alt="js validator"/></a>
+        </div>
+    </body>
+</html>
